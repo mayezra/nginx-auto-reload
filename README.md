@@ -35,7 +35,7 @@ Pod
 ### Deploy
 
 1. Create namespace:
-```bash
+
 kubectl create namespace nginx-sidecar
 ```
 
@@ -66,7 +66,6 @@ kubectl create configmap nginx-config \
 NGINX will automatically reload in ~60-70 seconds with zero downtime!
 
 ## 🎓 How It Works
-
 1. **ConfigMap Update**: You update nginx-config ConfigMap
 2. **Kubelet Sync**: Kubernetes syncs file to Pod (~60s)
 3. **Change Detection**: Watcher detects MD5 checksum change
